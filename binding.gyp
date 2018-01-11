@@ -8,7 +8,7 @@
       }],
       ['OS=="win" and target_arch=="x64"', {
         'angle_out': [
-          '../angle/gyp/Release_x64',
+          '../angle/out/Release',
         ],
       }],
     ],
@@ -30,9 +30,9 @@
       ],
 
       'libraries': [
-        '<(angle_out)/lib/libEGL',
-        '<(angle_out)/lib/libGLESv2',
-        '<(angle_out)/lib/angle_util',
+        '<(angle_out)/libEGL.dll.lib',
+        '<(angle_out)/libGLESv2.dll.lib',
+        '<(angle_out)/angle_util.dll.lib',
       ],
 
       'defines': [
@@ -42,9 +42,9 @@
 
       # Fails due to variables defined in angle/gyp/common_defines.gypi not being set,
       # despite everything I've tried, so hand-write the options above.
-      # 'dependencies': [
-      #   'angle/util/util.gyp:angle_util',
-      # ],
+     #  'dependencies': [
+     #     'angle/util/util.gyp:angle_util',
+     #  ],
     },
   ],
 }

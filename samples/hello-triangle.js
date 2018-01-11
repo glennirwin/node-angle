@@ -1,4 +1,4 @@
-const gl = require('./');
+const gl = require('../');
 
 function main() {
   const width = 800;

@@ -1,5 +1,5 @@
 {
-  "name": "google-angle",
+  "name": "node-angle",
   "version": "0.1.0",
   "description": "Node bindings to Google ANGLE, for nearly native OpenGL applications.",
   "main": "index.js",
